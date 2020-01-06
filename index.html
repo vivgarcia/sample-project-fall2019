@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+	<title>Garcia Lawn Pro</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script src="script.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+        $('ul').toggleClass('active')
+      })
+    });
+
+    $(document).ready(function(){
+      $('.icon').click(function(){
+        $('.icon').toggleClass('move')
+      })
+    });
+
+  </script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/53452e5a9b.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+	<header id="#home">
+    <div class="container-fluid">
+        <div class="branding">
+          <a href="#home"> <img src="img/garcialogo.png" alt="Garcia Lawn Pro logo"> </a>
+          <h3 id="slogan">"Lawn Service done right at the right price."</h3>
+        </div>
+		<nav>
+        <div class="toggle">
+          <div class="icon menu">
+            <div class="hamburger">
+            </div>
+          </div>
+        </div>
+				<ul>
+					<li><a class="nav-link" href="index.html">home</a></li>
+					<li><a class="nav-link" href="#about">about</a></li>
+					<li><a class="nav-link" href="#services">services</a></li>
+					<li><a class="nav-link" href="#testimonials">testimonials</a></li>
+				</ul>
+		</nav>
+    </div>
+	</header>
+	<!-- about section -->
+	<section id="about" class="section">
+		<div class="container-fluid">
+		<img src="img/lawncare-1.jpg" class="hero">
+		</div>
+		<div class="text-content">
+
+			<h3 class="about-title">About Our Company</h3>
+      <div class="border"></div>
+			<p>Garcia Lawn Pro, founded in 2019, is a family owned and operated business serving San Antonio and surronding areas. We service both residential and commercial clients. Our owner, Gabe Garcia, started Garcia Lawn Pro so he can spend more time with his family and pursue his interest of landscaping. Gabe has over 23 years of lawn service experience.</p>
+
+      <button id="res-btn">Residential</button>
+      <button id="comm-btn">Commercial</button>
+      <div id="learn-more">
+        
+      </div>
+
+      </div>
+		</div>
+	</section>
+  <section id="contact" class="section">
+        <h4>Contact Us:</h4>
+        <div class="contact-icons">
+        <i class="fas fa-phone">210-123-4567</i>
+        <i class="fas fa-envelope">contact@garcialawnpro.com</i>
+        </div>
+  </section>
+
+	<!-- services section -->
+	<section id="services" class="section">
+		<h3 class="name">Services</h3>
+	<div class="card-deck">
+  	<div class="card">
+    <img src="img/edging.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mowing, Edging, Blowing</h5>
+      <p class="card-text">This is our bread and butter. This is our standard service offered with add-ons available.</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#mowingModal" data-prod_id="V-A1037">Learn More</a>
+    </div>
+  	</div>
+ 	<div class="card">
+    <img src="img/treetrimming.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tree Trimming</h5>
+      <p class="card-text">Residential tree service to keep your trees healthy year round!</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#treeModal">Learn More</a>
+    </div>
+ 	</div>
+ 	<div class="card">
+    <img src="img/pest.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lawn Pest Control</h5>
+      <p class="card-text">Keep pest out of your yard and home with this add-on service!</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#pestModal">Learn More</a>
+    </div>
+    </div>
+	</div>
+	<br>
+		<div class="card-deck">
+  	<div class="card">
+    <img src="img/powerwashing.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Power Washing</h5>
+      <p class="card-text">Pressure washing service for sidewalk, walkway and driveway cleaning.</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#powerModal">Learn More</a>
+    </div>
+  	</div>
+ 	<div class="card">
+    <img src="img/fertilizer.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fertilizer Treatment</h5>
+      <p class="card-text">Provide your lawn with nutrients needed for greener and healthier lawns!</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#fertilizerModal">Learn More</a>
+    </div>
+ 	</div>
+ 	<div class="card">
+    <img src="img/sodinstallation.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sod Installation</h5>
+      <p class="card-text">Start fresh with a new beautiful lawn!</p>
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#sodModal">Learn More</a>
+    </div>
+    </div>
+	</div>
+
+	</section>
+
+	<!-- testimonials section -->
+	<section id="testimonials" section="section">
+		<div class="inner">
+      <h3>Testimonials</h3>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/p1.jpeg">
+            <div class="name">Amhurst HOA President</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+                Lorem ipsum dolor amet pok pok 90's iPhone heirloom, single-origin coffee four dollar toast schlitz selvage blue bottle photo booth before they sold out letterpress franzen. 
+              </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/p2.jpeg">
+            <div class="name">Amhurst Home Owner</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+                Lorem ipsum dolor amet pok pok 90's iPhone heirloom, single-origin coffee four dollar toast schlitz selvage blue bottle photo booth before they sold out letterpress franzen.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+
+  <footer>
+  <p>&copy;2019 Viviana Garcia.</p>
+  <p>This website was created for educational use only and is not meant to represent an actual business. Any similarities to an actual business is not intended.</p>
+  </footer>
+
+	<!-- modals -->
+	<div class="modal fade" id="mowingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mowing, Edging, Blowing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal">
+        <div>
+         <ul>
+           <li>Starting Price: $35.00</li>
+           <li>Type of Service: Base</li>
+           <li>Description: This is our bread and butter. We provide attention to detail so you can enjoy a beautiful lawn.
+           </li> 
+         </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="treeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Tree Trimming</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="modal">
+      <div>
+       <ul>
+         <li>Starting Price: $100.00</li>
+         <li>Type of Service: Base</li>
+         <li>Description: This service is provided as a base service. Currently only available seasonally. Contact us for more information.  </li> 
+       </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="pestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Lawn Pest Control</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="modal">
+      <div>
+       <ul>
+         <li>Starting Price: $30.00</li>
+         <li>Type of Service: Add-On</li>
+         <li>Description: Available as an add-on to our Mowing base service. Contact for more information</li> 
+       </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="powerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Power Washing</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="modal">
+      <div>
+       <ul>
+         <li>Starting Price: $50.00</li>
+         <li>Type of Service: Base</li>
+         <li>Description:  Currently not offered to commercial clients. Residential concrete washing includes sidewalk, driveway and any walkways. Contact us for more information.</li> 
+       </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="fertilizerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Fertilizer Treatment</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="modal">
+      <div>
+       <ul>
+         <li>Starting Price: $30.00</li>
+         <li>Type of Service: Add-On</li>
+         <li>Description: Watering your lawn alone is not sufficient for a healthy, beautiful yard! Available as an add-on to our base services.</li> 
+       </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="sodModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Sod Installation</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="modal">
+      <div>
+       <ul>
+         <li>Starting Price: $100.00</li>
+         <li>Type of Service: Base</li>
+         <li>Description: Currently only a residential service. We will prepare the yard and lay the new grass for a fresh start! </li> 
+       </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

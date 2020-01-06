@@ -1,0 +1,40 @@
+{
+    "services" : [
+        {
+            "serv_name" : "Mowing, Edging, Blowing",
+            "serv_id" : "V-A1037",
+            "starting_price" : 35.00,
+            "description" : "Base Service",
+            },
+        {
+            "serv_name" : "Tree Trimming",
+            "serv_id" : "V-A1037",
+            "starting_price" : 100.00,
+            "description" : "Base Service",
+            },
+       {
+            "serv_name" : "Lawn Pest Control",
+            "serv_id" : "V-A1037",
+            "starting_price" : 30.00,
+            "description" : "Add-On Service",
+            },
+        {
+            "serv_name" : "Power Washing",
+            "serv_id" : "V-A1037",
+            "starting_price" : 50.00,
+            "description" : "Add-On Service",
+            },
+        {
+            "serv_name" : "Fertilizer Treatment",
+            "serv_id" : "V-A1037",
+            "starting_price" : 30.00,
+            "description" : "Add-On Service",
+            },
+        {
+            "serv_name" : "Sod Installation",
+            "serv_id" : "V-A1037",
+            "starting_price" : 100.00,
+            "description" : "Base Service",
+            },     
+    ]
+}
